@@ -1,0 +1,5 @@
+array["zzyyxx", "xxyyzz"]
+anotherArray["yyxxzz", "xxzzyy", "xxyyzz"]
+
+array[0] == anotherArray[0] ?
+zzyyxx == yyxxzz ?

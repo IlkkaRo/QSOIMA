@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>jQuerying my arse off</title>
+
+    <style>
+    #box {
+              background-color: cyan;
+              border: 1px solid green;
+              width: 80px;
+              height: 80px;
+              position: absolute;
+            }
+    </style>
+
+  </head>
+  <body>
+
+    <button id="helloWorld">Clickety click!</button>
+    <div id="helloId"></div>
+<br>
+    <input id="yourname">
+    <p id="hello">Hello, </p>
+<br>
+    <div id="sameSize">
+    <img id="wonDerful" src="https://i1.trekearth.com/photos/51640/sunny_afternoon.jpg">
+    </div>
+<br>
+<div id="stuff">
+
+ <li>Lorem ipsum</li>
+ <li >dolor sit amet</li>
+ <li>Sample text here</li>
+ <li>Lorem ipsum</li>
+ <li class="thing-we-look-for">Look here</li>
+ <li>Stuff here</li>
+ <li>Lorem ipsum</li>
+ <li class="thing-we-look-for">And here</li>
+ <li>Lorem ipsum</li>
+ <li>Text</li>
+ <li>Final list item</li>
+
+</div>
+<br>
+  <button id="seaRch">Do we have it?</button>
+  <input id="looKing">
+<br>
+  <div id="box"></div>
+
+<script>
+  $("#sameSize").css({"height": "550px"
+  });
+
+  $("#helloWorld").click(function(){
+    $("#helloId").html("<h2>Hello, world!</h2>");
+  });
+
+  $("#yourname").keyup(function(){
+    var name = $("#yourname").val();
+    $("#hello").html("Hello, " + name);
+  });
+
+  $("img").hover(function(){
+    $("#wonDerful").attr("src", "https://media1.tenor.com/images/e54295364390057f7482f2966e2a4cd0/tenor.gif?itemid=5390133");}
+    ,function(){$("#wonDerful").attr("src", "https://i1.trekearth.com/photos/51640/sunny_afternoon.jpg")
+  });
+
+  $("#stuff").find(".thing-we-look-for").css({"color": "red", "font-style": "italic"
+  });
+
+  var search="ipsum";
+  $("li:contains("+search+")").css({"background-color": "blue"
+  });
+
+  $("#seaRch").click(function(){
+  var lookfor = $("#looKing").val();
+  $("li:contains("+lookfor+")").css({"color": "green"})
+  });
+
+  $("#box").click(function(){
+      $(this).animate({width: "20px", height: "20px", right: 100}, 3000);
+    });
+
+ </script>
+  </body>
+</html>

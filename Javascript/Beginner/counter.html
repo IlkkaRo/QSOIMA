@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Simple JS Counter</title>
+	<meta charset="utf-8">
+</head>
+<body style="font-size:60px"; style="text-align:center";>
+    <button style="font-size:60px" type="button" onclick="countUp()" onmousedown="changeOpacity()" onmouseup="resetOpacity()">Count Up!</button>
+		<button style="font-size:60px" type="button" onclick="reset()">Reset</button>
+		<div id = "counter">0</div>
+
+	<script type="text/javascript">
+//first we define global variable
+	var count = 0;
+//will increase the div by 1 on click
+		function countUp(){
+			console.log("Now the counter should go one up.");
+			count++; //increases count by 1
+			document.getElementById("counter").innerHTML = count;
+			document.getElementById("counter").style.color = "blue";
+		}
+//will reset to 0
+		function reset(){
+			count = 0;
+			document.getElementById("counter").innerHTML = count;
+			document.getElementById("counter").style.color = "red";
+			console.log("Now the counter should be reset.");
+		}
+//will change opacity on button press
+		function changeOpacity(){
+			document.getElementById("counter").style.opacity = "0.2";
+		}
+//will return opacity on button release
+		function resetOpacity(){
+			document.getElementById("counter").style.opacity = "1.0";
+		}
+
+		</script>
+</body>
+</html>

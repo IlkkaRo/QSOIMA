@@ -1,0 +1,91 @@
+h1{
+  text-align: center;
+}
+
+/*navigation bar*/
+.navbar{
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.6;
+}
+
+.navbar a{
+  font-size: 200%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 2% 2%;
+  padding: 0% 3%;
+  border: medium solid red;
+}
+
+.navbar a:hover{
+  background-color: white;
+  color: black;
+}
+
+h1, h2{
+  margin: 1em;
+}
+
+body{
+  margin-left: auto;
+}
+
+.workExperience{
+  font-style: italic;
+  font-size: 140%;
+  padding: 0.5cm;
+}
+
+h1{
+  font-family: fantasy;
+}
+
+h2{
+  font-family: sans-serif;
+}
+
+p{
+  font-family: monospace;
+}
+
+.border{
+  padding: 0.5cm;
+  margin-left: 0.5cm;
+  margin-top: 1cm;
+  margin-right: 8cm;
+  border: medium dashed green;
+}
+
+*{box-sizing: border-box;}
+
+.container{
+  width: 100%;
+  background-color: grey;
+}
+
+.skills{
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.MicrosoftOffice{
+  width: 90%; background-color: #4CAF50;
+}
+
+.PeopleSkills{
+  width: 85%; background-color: #2196F3;
+}
+
+.PublicSpeaking{
+  width: 60%; background-color: #53070E;
+}
+
+body{
+  background: #B0E0E6 url("goofy.jpg") no-repeat top right;
+}

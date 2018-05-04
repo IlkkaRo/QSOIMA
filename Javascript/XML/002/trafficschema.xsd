@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="typeTrafficLight">
+
+  <xs:restriction base="xs:token">
+    <xs:enumeration value="Red"/>
+    <xs:enumeration value="Yellow"/>
+    <xs:enumeration value="Green"/>
+  </xs:restriction>
+
+</xs:simpleType>
+
+<xs:element name="TrafficLights">
+  <xs:complexType>
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="TrafficLight" type="TrafficLight"/>

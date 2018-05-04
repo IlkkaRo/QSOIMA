@@ -1,0 +1,11 @@
+#currentTime  {
+  background-color: #242c39;
+  font-size: 3.5em;
+  text-align: center;
+  font-family: courier;
+  font-weight: 350;
+  color:  #22e100;
+  border: 1px solid  #22e100;
+  width: 400px;
+  margin: 100px auto;
+}

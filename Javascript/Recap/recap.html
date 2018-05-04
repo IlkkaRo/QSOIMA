@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+     function howLongUntill(date){
+       return timeUntilDate;
+     }
+
+     function updateTime(){
+       var countDownDate = new Date("Jan 1, 2019 00:00:00");
+       setInterval(function(){
+         var now = new Date().getTime();
+         var distanceBetween = countDownDate-now;
+         // var distanceSeconds = distanceBetween / 1000;
+         // var distanceMinutes = distanceSeconds / 60;
+         // var distanceHours = distanceMinutes / 60;
+         var distanceDays = Math.floor(distanceBetween/(1000*60*60*24));
+         var distanceHours = Math.floor((distanceBetween % (1000*60*60*24))/(1000*60*60));
+         var distanceMinutes = Math.floor((distanceBetween % (1000*60*60))/(1000*60));
+         var distanceSeconds = Math.floor(distanceBetween % (1000*60)/1000);
+         console.log(distanceDays);
+         console.log(distanceHours);
+         console.log(distanceMinutes);
+         console.log(distanceSeconds);
+       }, 1000);
+     }
+
+updateTime();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<instruments>
+
+  <instrument>
+    <i_code>123</i_code>
+    <name>Flute</name>
+    <manufacturer>Murray Ltd</manufacturer>
+    <family>Wind</family>
+    <price>500</price>
+    <year>2012</year>
+  </instrument>
+  <instrument>
+    <i_code>234</i_code>
+    <name>Violin</name>
+    <manufacturer>Siyota</manufacturer>
+    <family>String</family>
+    <price>1200</price>
+    <year>2000</year>
+  </instrument>
+  <instrument>
+    <i_code>345</i_code>
+    <name>Bodhram</name>
+    <manufacturer>McNeals</manufacturer>
+    <family>Percussion</family>
+    <price>600</price>
+    <year>2017</year>
+  </instrument>
+
+  <invoice>
+    <number>12</number>
+    <custm_cod>222</custm_cod>
+    <amount>1200</amount>
+    <I_code>234</I_code>
+    <concept>Siyota Violin not discount</concept>
+  </invoice>
+  <invoice>
+    <number>14</number>
+    <custm_cod>333</custm_cod>
+    <amount>1000</amount>
+    <I_code>234</I_code>
+    <concept>Siyota Violin with discount</concept>
+  </invoice>
+  <invoice>
+    <number>15</number>
+    <custm_cod>555</custm_cod>
+    <amount>600</amount>
+    <I_code>345</I_code>
+    <concept>Bodhram</concept>
+  </invoice>
+
+  <customer>
+    <custm_cod>222</custm_cod>
+    <name>John Smith</name>
+    <address>Church st. 12, 23456, Salt Hill</address>
+    <ph_number>+4434567832</ph_number>
+  </customer>
+  <customer>
+    <custm_cod>333</custm_cod>
+    <name>Nora Johnson</name>
+    <address>Beach Square 15, 55456, Fieldsburg</address>
+    <ph_number>+4434567444</ph_number>
+  </customer>
+  <customer>
+    <custm_cod>555</custm_cod>
+    <name>Natalie Foret</name>
+    <address>Rue de la Maison 150, 53342, Partenac</address>
+    <ph_number>+3332227444</ph_number>
+  </customer>
+
+</instruments>

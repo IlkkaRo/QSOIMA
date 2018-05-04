@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Click the button to trigger a function that will write your name in a p element with id="name"
+    .</p>
+    <form>
+      <input type="text" id="yourname" placeholder="What is your name?">
+      <button onclick="myFunction()">Click me</button>
+    </form>
+
+    <p>Ok, your name is:</p>
+    <p id="yourname"></p>
+
+    <script type="text/javascript">
+
+      function myFirstFunction(){
+        document.getElementById("name").innerHTML=document.getElementById("yourname")
+      }
+  </body>
+</html>

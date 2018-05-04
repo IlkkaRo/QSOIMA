@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>Click the button to trigger a function that will write your name in a p element with id="name".</p>
+	<form>
+		<label for="firstname">What is your first name?</label>
+		<input id="firstname" type="text">
+		<label for="lastname">What is your last name?</label>
+		<input id="lastname" type="text">
+		<label for="age">How old are you?</label>
+		<input id="age" type="number">
+	</form>
+	<button onclick="myFunction()">Click me</button>
+
+	<p>Your full name is:</p>
+	<div id="fullname"></div>
+
+	<p>And you are this old:</p>
+	<div id="yourage"></div>
+
+	<script type="text/javascript">
+
+		function myFunction() {
+
+		var firstname;   /*The variables are only visible inside this function unless we "send" them to another function when we call it like we do below. */
+		var lastname;
+		var age;
+
+		firstname = document.getElementById("firstname").value;
+		lastname = document.getElementById("lastname").value;
+		age = document.getElementById("age").value;
+
+		//1. Get the values for firstname and lastname from user input here.
+
+		var full = fullName(firstname, lastname) /*When we call a function inside a function, the program will go through all the steps inside the new function before continuing on this function*/
+
+		console.log(full);
+
+		//Your code here: 3. Get user's age from user input age and set the div with id yourage to that value, and 4. Set div with id fullname to user's full name.
+		document.getElementById("yourage").innerHTML = age;
+		document.getElementById("fullname").innerHTML = full;
+		}
+
+		/*Even though the names of the variables are different, the values are the same */
+		function fullName(first, last) {
+
+		var fullname;	//variable where the first and last name will be added to.
+
+			fullname = first + " " + last;
+		//Your code here: 2. Set the variable fullname to user's first and last name.
+
+
+		return fullname; //return will stop executing this and return to where this function was called. In this case we return a variable. Variable full in myFunction() will become that value.
+		}
+
+
+	</script>
+</body>
+</html>

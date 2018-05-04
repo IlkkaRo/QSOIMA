@@ -1,0 +1,35 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+#hogwarts-background{
+  display: flex;
+  align-items: center;
+  background-image: url("Hogwarts.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#form-wrapper{
+  width: 90%;
+  max-width: 500px;
+  height: 500px;
+  background-color: rgba(0,0,0,0.6);
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+#form-wrapper > form {
+  color: white;
+  padding: 40px;
+}
+
+#admission-form{
+
+}

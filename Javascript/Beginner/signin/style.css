@@ -1,0 +1,38 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  background-color: #2F80ED;
+  display: flex;
+  flex-direction: column;
+}
+
+.login{
+  margin:auto;
+  text-align: center;
+  width: 40%;
+}
+
+.login input{
+  padding: 2%;
+  margin-top: 10%;
+  border-radius: 10px;
+  width: 65%;
+  font-size: 1.5em;
+}
+
+.login button{
+  border-radius: 55px;
+  box-sizing: border-box;
+  margin-top: 10%;
+  padding: 2%;
+  font-size: 1.5em;
+  background-color: transparent;
+}
+
+.header{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

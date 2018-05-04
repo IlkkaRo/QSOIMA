@@ -1,0 +1,53 @@
+
+body{
+		text-align: center;
+		font-family: verdana;
+		font-size: 150%;
+		background-image: url("papyrus.jpg");
+}
+
+
+.navbar{
+	display: inline-block;
+	width: 100%;
+}
+
+.navbar a{
+	color: #00BFFF;
+}
+
+ul{
+
+}
+
+li{
+
+}
+
+form{
+	padding: 4px;
+}
+
+.welcome{
+font-style: italic;
+}
+
+
+.question{
+	border-style: ridge;
+	margin: 50px;
+	background-color: gray;
+	padding-bottom: 30px;
+}
+
+.answer{
+
+}
+
+#submit{
+	font-size: 24px;
+	background-color: black;
+	color: white;
+	border-radius: 12px;
+	padding: 15px 30px;
+}
