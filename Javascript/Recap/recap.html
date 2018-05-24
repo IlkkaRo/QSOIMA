@@ -2,16 +2,64 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Time to count...err...time.</title>
   </head>
   <body>
 
-    <script>
+<h2>How long until this grand future date:</h2>
+<form>
+  <input id="datefield" type="date" min="1977-11-11"></input>
+  <button id='sendUserDate' onclick="getFromDate()">Send date</button>
+  <input id="timefield" type="time"></input>
+  <button id='sendUserTime' onclick="getFromTime()">Send time</button>
+  <!-- <input type="submit" value="Present the grand date"></input> -->
+  <h2 id=receiveDate></h2>
+  <h2 id=receiveTime></h2>
+</form>
 
-     function howLongUntill(date){
-       return timeUntilDate;
-     }
+        <script>
+        // This sets the datefield so it can't go to the past
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+         if(dd<10){
+                dd='0'+dd
+            }
+            if(mm<10){
+                mm='0'+mm
+            }
 
+        today = yyyy+'-'+mm+'-'+dd;
+        document.getElementById("datefield").setAttribute("min", today);
+
+        function getFromDate(datefield){
+          let userDate = document.getElementById('datefield').value;
+          var d = new Date(userDate);
+          var gyear = d.getFullYear();
+          var gmonth = d.getMonth()+1;
+          var gdate = d.getDate();
+          // console.log('getFullYear() returns: ' + year);
+          // console.log('getMonth() returns: ' + month);
+          // console.log('getDate() returns: ' + day);
+          document.getElementById('receiveDate').innerHTML = gdate +'.' + gmonth + '.' + gyear;
+        }
+
+        function getFromTime(timefield){
+          let userTime = document.getElementById('timefield').value;
+          var d = new Date(userTime);
+          var ghour = d.getHours();
+          var gminutes = d.getMinutes();
+          document.getElementById('receiveTime').innerHTML = ' ' + ghour + ':' + gminutes;
+        }
+
+        // var pvm = document.getElementById("datefield").value;
+        // console.log(pvm);
+        // pvm2 = new Date(pvm)
+        // var paiva = pvm2.getDate();
+        // var minuutti = pvm2.getMinutes();
+
+        // the time counter
      function updateTime(){
        var countDownDate = new Date("Jan 1, 2019 00:00:00");
        setInterval(function(){
